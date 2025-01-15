@@ -567,5 +567,7 @@ public class Main {
             }
 
         } while (isPlayAgain);
+
+        input.close();
     }
 }
