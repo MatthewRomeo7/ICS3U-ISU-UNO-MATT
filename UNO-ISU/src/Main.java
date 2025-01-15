@@ -71,7 +71,7 @@ public class Main {
             }
 
             //Introduce Game and Initialize whether it's a PvP or PvE game and make sure no option breaks the code
-            System.out.println("Welcome to Uno!\nWould you like to play against another player, or against AI? (answer with either pvp or pve)");
+            System.out.println("Welcome to Uno! Final Scoring is 50 points per Card.\nWould you like to play against another player, or against AI? (answer with either pvp or pve)");
             String isPVP = input.nextLine();
             boolean isCorrect = false;
 
@@ -214,6 +214,7 @@ public class Main {
                     //Win message
                     if (deck1.isEmpty()) {
                         System.out.println("Player One Wins!");
+                        System.out.println("Final Score: " + deck2.size() * 50);
                         break;
                     }
 
@@ -315,6 +316,7 @@ public class Main {
 
                     if (deck2.isEmpty()) {
                         System.out.println("Player Two Wins!");
+                        System.out.println("Final Score: " + deck1.size() * 50);
                         break;
                     }
                 }
@@ -422,6 +424,7 @@ public class Main {
 
                     if (deck1.isEmpty()) {
                         System.out.println("Player One Wins!");
+                        System.out.println("Final Score: " + deck2.size() * 50);
                         break;
                     }
 
@@ -549,6 +552,7 @@ public class Main {
 
                     if (deck2.isEmpty()) {
                         System.out.println("AI Wins!");
+                        System.out.println("Final Score: " + deck1.size() * 50);
                         break;
                     }
                 }
