@@ -548,7 +548,7 @@ public class Main {
                         if (deck2.size() == 1) {
                             System.out.println("UNO for AI!");
                         }
-                    } while (isSkip && deck2.isEmpty());
+                    } while (isSkip && !deck2.isEmpty());
 
                     if (deck2.isEmpty()) {
                         System.out.println("AI Wins!");
